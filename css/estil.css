@@ -1,0 +1,115 @@
+*{
+ font-family: american-typewriter;
+ color:#154360;
+ box-sizing: border-box;
+}
+
+.cap{
+	background-color:#fae5d3;
+	padding:15px;
+	text-align: center;
+	text-align: center;
+	position: relative;
+}
+.cap h1{
+	font-family: Georgia, 'Times New Roman', Times, serif, cursive; /* Fuente cursiva llamativa */
+    color: #1b4f72; /* Un color vibrante */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto para hacer que resalte */
+ 
+}
+
+.cap-can {
+	width: 100px; 
+    height: 90px; 
+    float: right;
+    vertical-align: middle;
+}
+.body {
+   
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    margin: 0;
+}
+
+.menu {
+
+ float: left;
+ width: 20%;
+ text-align: center;
+ box-sizing: border-box;
+ 
+
+}
+.menu a {
+ background-color: #d6eaf8;
+ padding: 8px;
+ margin-top: 7px;
+ display: block;
+ width: 100%;
+ color: black;
+ text-decoration: none;
+}
+.menu a:hover{
+	color: white;
+	background-color: #fae5d3;
+}
+.main {
+background-color: #aed6f1;
+ float: left;
+ margin-top: 7px;
+ width: 60%;
+ padding: 0 15px;
+ box-sizing: border-box;
+}
+.right {
+ background-color: #d6eaf8;
+ float: left;
+ width: 20%;
+ padding: 15px;
+ margin-top: 7px;
+ text-align: center;
+ box-sizing: border-box;
+}
+.menu img, .right img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 7px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.gallery{
+    text-align: center;
+    margin-top: 255px;
+	margin-bottom: 1px;
+    box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 270px;
+}
+.gallery img{
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: .6;
+	transition: .5s ease;
+}
+.gallery img:hover{
+	cursor: crosshair;
+	width: 120px;
+	opacity: 1;
+	filter: contrast(120%);
+}
+
+
+@media only screen and (max-width: 620px) {
+ /* For mobile phones: */
+ .cap, .menu, .main, .right {
+ width: 100%;
+ }
+}
